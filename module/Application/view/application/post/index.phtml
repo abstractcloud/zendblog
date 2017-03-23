@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Posts page</h2>
+        <hr>
+        <?php foreach($posts as $post): ?>
+            <a href="<?= $this->url('posts', ['action'=>'show', 'id'=>$post->getId()]); ?>"><?=$post->getName(); ?></a><br>
+        <?php endforeach; ?>
+    </div>
+</div>
